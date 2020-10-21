@@ -37,6 +37,7 @@ public class SqlServerDriverVersionUtil {
             SqlServerDriverVersionUtil check = new SqlServerDriverVersionUtil();
             conn = check.createDbConnection(driverClassName, connectionUrl);
 
+            System.out.println("OK. The connection is established.");
             System.out.println("Finished AzureSQL database jdbc-driver compatibility test.");
 
         } catch (IOException exc) {
@@ -66,8 +67,10 @@ public class SqlServerDriverVersionUtil {
             Class.forName(driverClassName);
             conn = DriverManager.getConnection(connectionUrl);
         } catch (ClassNotFoundException exception) {
+            System.out.println("FAILED.");
             throw new RuntimeException(exception);
         } catch (SQLException exception1) {
+            System.out.println("FAILED.");
             throw new RuntimeException(exception1);
         }
         return conn;
