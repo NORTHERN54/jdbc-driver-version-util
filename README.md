@@ -5,6 +5,7 @@ JRE 1.5.0.22 is required to run app
 
 ## How to start application from command line: 
 %JAVA_HOME%\bin\java.exe -jar JdbcDriverVersionUtil.jar 
+
 e.g. C:\jdk1.5.0_22\bin\java.exe -jar JdbcDriverVersionUtil.jar 
 
 ## How to start application from command line with connection string as parameter: 
