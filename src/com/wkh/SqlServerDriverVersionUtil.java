@@ -15,7 +15,7 @@ public class SqlServerDriverVersionUtil {
         String javaVersion = System.getProperty("java.version");
         System.out.println("java version: " + javaVersion);
         if (!javaVersion.contains("1.5")) {
-            throw new IllegalArgumentException("Wrong java version " + javaVersion
+            throw new IllegalArgumentException(" Wrong java version " + javaVersion
                     + "IMPORTANT: The solution for JRE 1.5u22 is needed.");
         }
 

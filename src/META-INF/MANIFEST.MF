@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Class-Path: jaxws-api.jar junit-4.4.jar jsr181-api.jar jsr250-api.jar 
+ commons-net-2.0.jar ant-contrib-1.0b3.jar jakarta-oro-2.0.8.jar swing
+ -layout-1.0.3.jar ant-contrib-1.0b3.jar commons-net-2.0.jar jakarta-o
+ ro-2.0.8.jar jaxws-api.jar jsr181-api.jar jsr250-api.jar junit-4.4.ja
+ r jackson-core-asl-1.9.13.jar jackson-mapper-asl-1.9.13.jar commons-d
+ bcp-1.3.jar commons-lang3-3.1.jar commons-pool-1.5.4.jar commons-vali
+ dator-1.4.0.jar sqljdbc-2.0.jar
+Main-Class: com.wkh.SqlServerDriverVersionUtil
+
