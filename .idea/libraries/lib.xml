@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/ant-contrib-1.0b3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-net-2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jakarta-oro-2.0.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jaxws-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jsr181-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jsr250-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit-4.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson/jackson-core-asl-1.9.13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson/jackson-mapper-asl-1.9.13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Apache/commons-dbcp-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Apache/commons-lang3-3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Apache/commons-pool-1.5.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Apache/commons-validator-1.4.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/MSSQL/sqljdbc-2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/Apache/commons-lang3-3.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/WebService/jaxb-xjc.jar!/1.0" />
+    </SOURCES>
+  </library>
+</component>
