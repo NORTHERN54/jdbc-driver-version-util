@@ -1,0 +1,40 @@
+
+C:\Users\Yury.Verameichyk\work\azuresqltest\JdbcDriverVersionUtil_jar>run_app
+Test-case #1: Java5 + Azure SQL, expected result:FAILED ---------------------------------
+Started AzureSQL database jdbc-driver compatibility test.
+java version: 1.5.0_22
+JDBC driver class name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+Connection url: jdbc:sqlserver://zuse2dmsblddbs01.4f4bacceafad.database.windows.net:1433;databaseName=MSC_QA51;user=***@zuse2dmsblddbs01;password=***;encrypt=true;trustServerCertificate=true;hostNameInCertificate=*.4f4bacceafad.database.windows.net;loginTimeout=30;
+FAILED.
+Exception in thread "main" java.lang.RuntimeException: com.microsoft.sqlserver.jdbc.SQLServerException: Login failed for user '***@zuse2dmsblddbs01'.
+        at com.wkh.SqlServerDriverVersionUtil.createDbConnection(SqlServerDriverVersionUtil.java:74)
+        at com.wkh.SqlServerDriverVersionUtil.main(SqlServerDriverVersionUtil.java:38)
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: Login failed for user '***@zuse2dmsblddbs01'.
+        at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:196)
+        at com.microsoft.sqlserver.jdbc.TDSTokenHandler.onEOF(tdsparser.java:246)
+        at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:83)
+        at com.microsoft.sqlserver.jdbc.SQLServerConnection.sendLogon(SQLServerConnection.java:2532)
+        at com.microsoft.sqlserver.jdbc.SQLServerConnection.logon(SQLServerConnection.java:1929)
+        at com.microsoft.sqlserver.jdbc.SQLServerConnection.access$000(SQLServerConnection.java:41)
+        at com.microsoft.sqlserver.jdbc.SQLServerConnection$LogonCommand.doExecute(SQLServerConnection.java:1917)
+        at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:4026)
+        at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1416)
+        at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1061)
+        at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:833)
+        at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:716)
+        at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:841)
+        at java.sql.DriverManager.getConnection(DriverManager.java:525)
+        at java.sql.DriverManager.getConnection(DriverManager.java:193)
+        at com.wkh.SqlServerDriverVersionUtil.createDbConnection(SqlServerDriverVersionUtil.java:68)
+        ... 1 more
+End of Test-case #1: --------------------------------------------------------------------
+..
+..
+Test-case #2: Java5 + SQL Paas, expected result: PASSED ---------------------------
+Started AzureSQL database jdbc-driver compatibility test.
+java version: 1.5.0_22
+JDBC driver class name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+Connection url: jdbc:sqlserver://zuse2sccdbs01.database.windows.net:1433;database=MSC_QA51;user=***@zuse2sccdbs01;password=***;encrypt=true;trustServerCertificate=true;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+OK. The connection is established.
+Finished AzureSQL database jdbc-driver compatibility test.
+End of Test-case #2: --------------------------------------------------------------------
