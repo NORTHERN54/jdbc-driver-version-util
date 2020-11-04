@@ -3,6 +3,7 @@
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/junit-4.4.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/MSSQL/sqljdbc-2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/oracle/ojdbc5.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/lib/Apache/commons-lang3-3.1-javadoc.jar!/" />
